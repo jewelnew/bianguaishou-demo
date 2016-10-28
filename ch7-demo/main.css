@@ -7,14 +7,23 @@ body{
 	height: 100vw;/*高度为视口宽度的100vw即为正方形*/
 	background-size: 100%;
 	background-repeat: no-repeat;
+	margin-top: 380px;
+}
+
+.banner{
+	position: relative;
+	/*脱离了normal flow*/
+	overflow: hidden;
 }
 
 .banner:before{
 	content: "";
-	/*方案一*/
-	display: block;
-	height: 300px;
 	background-color: #cfeafd;
-	
-
+	/*方案二*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 381px;
 }
+
