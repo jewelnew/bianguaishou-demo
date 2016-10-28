@@ -35,7 +35,7 @@ body{
 	right: 0;
 	height: 381px;
 }
-
+/*对content加动画飞入的效果*/
 .banner .content{
 	text-align: center;
 	font-family: "UniversLTStd",Arial,sans-serif;
@@ -45,7 +45,20 @@ body{
 	right: 20px;
 	width: auto;
 	color: #2d2d2d;
+	animation-name:slideRight;
+	animation-duration: .7s;
 }
+@keyframes slideRight{
+	from{
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
 .banner small{
 	background-color: #043f8b;
 	color:white;
