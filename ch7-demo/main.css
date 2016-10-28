@@ -1,7 +1,16 @@
+/*common*/
 body{
 	margin: 0;
 }
 
+@font-face{
+	font-family:"UniversLTStd";
+	font-style: normal;
+	font-weight: 300;
+	src:url(./fonts/UniversLTStd-UltraCn.woff)format("woff");
+}
+
+/*banner*/
 .banner-img{
 	background: url(./img/768-banner.jpg);
 	height: 100vw;/*高度为视口宽度的100vw即为正方形*/
@@ -27,3 +36,44 @@ body{
 	height: 381px;
 }
 
+.banner .content{
+	text-align: center;
+	font-family: "UniversLTStd",Arial,sans-serif;
+	position: absolute;
+	top: 90px;
+	left: 20px;
+	right: 20px;
+	width: auto;
+	color: #2d2d2d;
+}
+.banner small{
+	background-color: #043f8b;
+	color:white;
+	font-size: 24px;
+	line-height: .9;
+	padding: 5px;
+	display: inline-block;
+}
+.banner p{
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0;
+}
+.banner p.title{
+	font-size: 72px;
+	margin: 25px 0;
+	line-height: 65px;
+	padding-bottom: 25px;
+	position: relative;
+}
+.banner p.title:after{
+	background-color: #043f8b;
+	width: 95px;
+	height: 1px;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -47px;
+}
